@@ -43,3 +43,43 @@ data = np.random.chisquare(df, size)#返回卡方分布样本值
 print data.shape#数组的形状
 print data.dtype#数组元素的类型
 print data.ndim#数组的维度
+arr1 = np.array(data1,dtype=np.int32)#显式指定数据类型
+arr2 = arr1.astype(np.float64)#显式转换类型
+##转置
+
+#数组运算
+##与标量运算/一元通用函数
+data +-*/ 10#各元素分别加减乘除10
+1 / data#各个元素取倒数
+data**2#各个元素取平方
+np.square(data)#各个元素取平方
+data**0.5#各个元素开根号
+np.sqrt(data)#各个元素开根号
+np.exp(data)#计算各个元素e^x
+np.abs(data)#计算各个元素绝对值。复数返回模长。
+np.fabs(data)#计算各个元素绝对值
+np.log(data)#计算各个元素lnx
+np.log10(data)#计算各个元素log10x
+np.log2(data)#计算各个元素log2x
+np.log1p(data)#计算各个元素ln(1+x)
+np.sign(data)#计算各个元素正负号（1，0，-1）
+np.ceil(data)#计算各个元素大于等于该值最小整数
+np.floor(data)#计算各个元素小于等于该值最大整数
+np.rint(data)#
+
+##统计方法
+
+##数组与数组运算/二元通用函数
+data1 +-*/ data2#对应元素加减乘除
+
+##集合运算
+
+##矩阵运算
+
+#索引与切片
+
+#布尔型数组
+
+#输入输出
+
+
