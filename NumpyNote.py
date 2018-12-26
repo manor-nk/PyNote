@@ -43,9 +43,20 @@ data = np.random.chisquare(df, size)#返回卡方分布样本值
 print data.shape#数组的形状
 print data.dtype#数组元素的类型
 print data.ndim#数组的维度
+print data.strides#数组的跨度元组，为了前进到当前维度下一个元素需要跨过的字节数
 arr1 = np.array(data1,dtype=np.int32)#显式指定数据类型
 arr2 = arr1.astype(np.float64)#显式转换类型
 ##转置
+arr2 = arr1.T#数组的转置
+arr2 = arr1.swapaxes(1,2)#将轴1和轴2调换，轴0不变
+
+##重塑
+data.reshape((4,2))#转换形状
+data.reshape((4,-1))#-1表示根据数据本身推断
+data.reshape(other.shape)#根据其他数组的形状转换
+data.ravel()#将数组展开成一维
+data.flatten()#将数组展开成一维
+
 
 #数组运算
 ##与标量运算/一元通用函数
